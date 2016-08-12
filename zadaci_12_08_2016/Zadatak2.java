@@ -1,6 +1,6 @@
 	/*
 	 * Napisati program koji pita korisnika da unese dva cijela, pozitivna 
-	 * broja te ispisuje najveæi i najmanji zajednièki djelilac za ta dva broja.
+	 * broja te ispisuje najveÃ¦i i najmanji zajedniÃ¨ki djelilac za ta dva broja.
 	 */
 package zadaci_12_08_2016;
 
@@ -29,7 +29,12 @@ public class Zadatak2 {
 		}
 		return num;
 	}
-			// metoda za pronalezenje najmanjeg zajednickog sadrzaoca
+			/* diskutabilna metoda za pronalazenje najmanjeg zajednickog sadrzaoca! :)
+			 * u zadatku pise da se pronadje najmanji zajednicki djelilac izmedju dva broja,
+			 * ako se vodimo tim uputama to bi znacilo da je najmanji zajednicki djelilac izmedju
+			 * bilo koja dva broja uvijek 1?
+			 * Pomislim greska u zadatku i uradim metodu gore navedenu
+			 */
 	public static int lci(int num1, int num2) {
 		int num = 0;
 		for (int i = (num1*num2); i >= num2; i--) {	
