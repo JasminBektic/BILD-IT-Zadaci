@@ -52,8 +52,7 @@ public class Zadatak_2 {
     private static void newPackage(File file, String name) throws FileNotFoundException {
         String lineSeparator = System.getProperty("line.separator");
         String pack = "package " + name + ";";
-        PrintWriter output = new PrintWriter(file);		// kreiranje objekata
-        Scanner read = new Scanner(file);
+        Scanner read = new Scanner(file);	//kreiranje objekta
         while (read.hasNext()) {
         	String s = read.nextLine();
             if (s.equals(pack)) {		//ako je linija jednaka stringu, zaustavi
@@ -63,6 +62,7 @@ public class Zadatak_2 {
             pack += lineSeparator + s;		
         }
         read.close();
+        PrintWriter output = new PrintWriter(file);
         output.write(pack);		//pisemo string u fajl
         output.close();
     }
