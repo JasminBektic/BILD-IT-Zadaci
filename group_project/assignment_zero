@@ -20,9 +20,9 @@
 	
 	
 	    /* Search query by city name */
-	SELECT c.ID, c.Name AS 'City Name', c.CountryCode AS 'Country Code', c.District, c.Population AS 'City Population', 
+  SELECT c.ID, c.Name AS 'City Name', c.CountryCode AS 'Country Code', c.District, c.Population AS 'City Population', 
   ct.Population AS 'Country Population', ct.Name AS Country, ct.Continent
-	    FROM City AS c
+	FROM City AS c
     	JOIN Country AS ct
     		ON ct.Code = c.CountryCode
     	WHERE c.Name = 'Sarajevo';
