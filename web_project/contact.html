@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jasmin Bektic">
+    <title>Personal Web Site</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-social.css">
+    <link rel="stylesheet" href="bootstrap/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">AboutMe</a></li>
+                    <li><a href="code.html">MyCodes</a></li>
+                    <li class="active"><a href="contact.html">ContactMe</a></li>
+                </ul>
+            </div><!--.nav-collapse -->
+        </div>
+    </nav>
+    
+        <div class="contact">
+           <form class="form-horizontal" role="form" method="post">
+	<div class="form-group">
+		 <label class="col-sm-4"></label>
+		<div class="col-sm-2">
+			<input type="text" class="form-control" id="name" name="name" placeholder="Name" value="">
+		</div>
+        
+		<div class="col-sm-2">
+			<input type="email" class="form-control" id="email" name="email" placeholder="Email" value="">
+		</div>
+	</div>    
+	<div class="form-group">
+        <label class="col-sm-4"></label>
+		<div class="col-sm-4">
+			<input type="subject" class="form-control" id="subject" name="subject" placeholder="Subject" value="">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-sm-4"></label>
+		<div class="col-sm-4">
+			<textarea class="form-control" rows="4" name="message" placeholder="Message"></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-1">
+			<input id="submit" name="submit" type="submit" value="Send Message" class="btn btn-primary">
+		</div>
+	</div>
+    </form>
+        </div>
+    
+    <div class="find">
+        <br><hr/>
+            <p>Find me on...</p>
+            <p>
+                <a class="btn btn-social-icon btn-facebook"
+                   href="https://www.facebook.com/jasmin.bektic.31">
+                <span class="fa fa-facebook"></span></a>
+                <a class="btn btn-social-icon btn-google"
+                   href="https://plus.google.com/u/0/108317542292531525574/posts">
+                <span class="fa fa-google-plus"></span></a>
+                <a class="btn btn-social-icon btn-linkedin"
+                   href="https://www.linkedin.com/in/jasmin-bektic-915879129?trk=hp-identity-name">
+                <span class="fa fa-linkedin"></span></a>
+                <a class="btn btn-social-icon btn-github" 
+                   href="https://github.com/Jaskio">
+                <span class="fa fa-github"></span></a>
+                <a class="btn btn-social-icon"
+                   href="http://www.last.fm/user/Jaskio">
+                <span class="fa fa-lastfm-square" style="font-size:40px;color:red"></span></a>
+            </p>
+        
+		</div>
+        
+   
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
